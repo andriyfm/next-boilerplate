@@ -2,6 +2,8 @@
 
 🚀 Boilerplate and Starter for newest Next.js, TailwindCSS and TypeScript ⚡️ Made with developer who has experience with Next.js, TypeScript, ESLint, Prettier, Husky, VSCode, PostCSS, TailwindCSS.
 
+You can check [the demo here](https://next-boilerplate-theta.vercel.app/).
+
 ## Features
 
 - [Next.js](https://nextjs.org) for Static Site Generator
