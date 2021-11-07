@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import * as React from "react";
-import styles from "../styles/Home.module.css";
+import styles from "styles/Home.module.css";
 
 const Home: NextPage = () => {
   return (
@@ -14,9 +14,22 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+        <h1 className="text-7xl font-black">
+          Next{" "}
+          <a
+            href="https://github.com/andriyfm/next-boilerplate"
+            className="text-blue-500 hover:text-blue-600 transition-colors"
+          >
+            Boilerplate
+          </a>
         </h1>
+
+        <a
+          href="https://github.com/andriyfm"
+          className="text-xs text-gray-400 text-center hover:underline"
+        >
+          by andriyfm
+        </a>
 
         <p className={styles.description}>
           Get started by editing{" "}
