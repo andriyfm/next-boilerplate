@@ -9,6 +9,7 @@ module.exports = {
     "plugin:jsx-a11y/recommended",
     "google",
     "prettier",
+    "next/core-web-vitals",
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
