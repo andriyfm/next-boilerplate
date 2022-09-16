@@ -1,0 +1,38 @@
+name: Cypress
+on:
+  push:
+    branches:
+      - "*"
+  pull_request:
+    branches:
+      - "*"
+
+jobs:
+  run-cypress:
+    name: Run Cypress
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2-beta
+        with:
+          node-version: "^16.10.0"
+          check-latest: true
+
+      - name: Install Npm Dependencies
+        run: yarn install
+
+      - name: Linting
+        run: yarn lint
+
+      - name: Build App
+        run: yarn build
+
+      - name: Run tests with jest
+        run: yarn test:ci
+
+      - name: Cypress.io
+        uses: cypress-io/github-action@v4.1.0
+        with:
+          start: yarn e2e:headless
+          wait-on: "http://localhost:3000"

@@ -9,7 +9,7 @@ You can check [the demo here](https://next-boilerplate-theta.vercel.app/).
 - [Next.js](https://nextjs.org) for Static Site Generator
 - Integrate with [Tailwind CSS](https://tailwindcss.com) (JIT mode)
 - Type checking [TypeScript](https://www.typescriptlang.org)
-- Strict Mode for TypeScript and React 17
+- Strict Mode for TypeScript and latest React
 - Linter with [ESLint](https://eslint.org) (default NextJS, NextJS Core Web Vitals and Google configuration)
 - Code Formatter with [Prettier](https://prettier.io)
 - Husky for Git Hooks
@@ -17,6 +17,7 @@ You can check [the demo here](https://next-boilerplate-theta.vercel.app/).
 - SEO metadata, JSON-LD and Open Graph tags with Next SEO
 - [Bundler Analyzer](https://www.npmjs.com/package/@next/bundle-analyzer)
 - Maximize lighthouse score
+- Github Action Test for Jest and Cypress
 
 ## Getting Started
 
