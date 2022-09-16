@@ -1,5 +1,7 @@
 # Next Boilerplate - Starter for Next.js 12+, TailwindCSS and Typescript
 
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
 🚀 Boilerplate and Starter for newest Next.js, TailwindCSS and TypeScript ⚡️ Made with developer who has experience with Next.js, TypeScript, ESLint, Prettier, Husky, VSCode, PostCSS, TailwindCSS.
 
 You can check [the demo here](https://next-boilerplate-theta.vercel.app/).
@@ -18,6 +20,7 @@ You can check [the demo here](https://next-boilerplate-theta.vercel.app/).
 - [Bundler Analyzer](https://www.npmjs.com/package/@next/bundle-analyzer)
 - Maximize lighthouse score
 - Github Action Test for Jest and Cypress
+- Commiziten
 
 ## Getting Started
 
