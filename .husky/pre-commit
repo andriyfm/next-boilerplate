@@ -1,4 +1,6 @@
-#!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
 
-yarn lint-staged
+# npx lint-staged
+# npx lint-staged && yarn test:staged
+npx lint-staged
