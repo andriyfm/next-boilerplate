@@ -5,6 +5,13 @@ import * as React from "react";
 import styles from "styles/Home.module.css";
 
 const Home: NextPage = () => {
+  React.useEffect(() => {
+    fetch("/api/hello")
+      .then((res) => res.json())
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err));
+  }, []);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -14,11 +21,11 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className="text-7xl font-black">
+        <h1 className="font-black text-7xl">
           Next{" "}
           <a
             href="https://github.com/andriyfm/next-boilerplate"
-            className="text-blue-500 hover:text-blue-600 transition-colors"
+            className="text-blue-500 transition-colors hover:text-blue-600"
           >
             Boilerplate
           </a>
@@ -26,7 +33,7 @@ const Home: NextPage = () => {
 
         <a
           href="https://github.com/andriyfm"
-          className="text-xs text-gray-400 text-center hover:underline"
+          className="text-xs text-center text-gray-400 hover:underline"
         >
           by andriyfm
         </a>

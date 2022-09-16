@@ -1,4 +1,4 @@
-import Button from "@atoms/Button";
+import Button from "@/atoms/Button";
 import { useRouter } from "next/router";
 
 export default function OfflinePage() {
