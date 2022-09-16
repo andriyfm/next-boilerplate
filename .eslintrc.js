@@ -7,6 +7,8 @@ module.exports = {
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:jsx-a11y/recommended",
+    "plugin:jest-dom/recommended",
+    "plugin:@typescript-eslint/recommended",
     "google",
     "prettier",
     "next/core-web-vitals",
@@ -22,6 +24,7 @@ module.exports = {
   plugins: ["react", "@typescript-eslint"],
   rules: {
     "require-jsdoc": "off",
+    "@typescript-eslint/no-unused-vars": "error",
   },
   settings: {
     react: {
