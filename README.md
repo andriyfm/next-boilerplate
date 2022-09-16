@@ -20,7 +20,8 @@ You can check [the demo here](https://next-boilerplate-theta.vercel.app/).
 - [Bundler Analyzer](https://www.npmjs.com/package/@next/bundle-analyzer)
 - Maximize lighthouse score
 - Github Action Test for Jest and Cypress
-- Commiziten
+- Commiziten Support
+- Progressive Web App Suport
 
 ## Getting Started
 
