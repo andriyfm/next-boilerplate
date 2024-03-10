@@ -1,2 +1,1 @@
-// Place all atom components in this folder and import it here.
-export {};
+export { Button } from "./Button/Button";
