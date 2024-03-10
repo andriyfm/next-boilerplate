@@ -1,6 +1,15 @@
+import {
+  Button,
+  Card,
+  Container,
+  SimpleGrid,
+  Stack,
+  Text,
+  Title,
+} from "@mantine/core";
 import { Metadata } from "next";
 import Image from "next/image";
-import styles from "./page.module.css";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "My Page Title",
@@ -9,73 +18,67 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
   return (
-    <div className={styles.container}>
-      <main className={styles.main}>
-        <h1 className="tw-font-black tw-text-7xl">
+    <Container py={20}>
+      <Stack gap={10}>
+        <Title fw={900}>
           Next.js{" "}
-          <a
+          <Link
             href="https://github.com/andriyfm/next-boilerplate"
             className="tw-text-blue-500 tw-transition-colors hover:tw-text-red-500"
           >
             Boilerplate
-          </a>
-        </h1>
+          </Link>
+        </Title>
 
-        <a
-          href="https://github.com/andriyfm"
-          className="tw-text-xs tw-text-center tw-text-gray-400 hover:tw-underline"
-        >
-          by andriyfm
-        </a>
+        <Link href="https://github.com/andriyfm">
+          <Text>by andriyfm</Text>
+        </Link>
 
-        <p className={styles.description}>
-          Get started by editing{" "}
-          <code className={styles.code}>pages/index.tsx</code>
-        </p>
+        <SimpleGrid cols={2}>
+          <Card shadow="sm" padding="lg" radius="md" withBorder>
+            <Link href="https://nextjs.org/docs">
+              <h2>Documentation &rarr;</h2>
+              <p>Find in-depth information about Next.js features and API.</p>
+            </Link>
+          </Card>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+          <Card shadow="sm" padding="lg" radius="md" withBorder>
+            <Link href="https://nextjs.org/learn">
+              <h2>Learn &rarr;</h2>
+              <p>Learn about Next.js in an interactive course with quizzes!</p>
+            </Link>
+          </Card>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+          <Card shadow="sm" padding="lg" radius="md" withBorder>
+            <Link href="https://github.com/vercel/next.js/tree/master/examples">
+              <h2>Examples &rarr;</h2>
+              <p>Discover and deploy boilerplate example Next.js projects.</p>
+            </Link>
+          </Card>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+          <Card shadow="sm" padding="lg" radius="md" withBorder>
+            <Link href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app">
+              <h2>Deploy &rarr;</h2>
+              <p>
+                Instantly deploy your Next.js site to a public URL with Vercel.
+              </p>
+            </Link>
+          </Card>
+        </SimpleGrid>
+      </Stack>
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
+      <Button variant="outline" size="lg" mt={20}>
+        <Link
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
           rel="noopener noreferrer"
         >
           Powered by{" "}
-          <span className={styles.logo}>
+          <span>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
-        </a>
-      </footer>
-    </div>
+        </Link>
+      </Button>
+    </Container>
   );
 }
