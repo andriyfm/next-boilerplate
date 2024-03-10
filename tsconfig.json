@@ -19,9 +19,8 @@
     "noImplicitReturns": true,
     "pretty": true,
     "sourceMap": true,
-    "baseUrl": "./src",
+    "baseUrl": ".",
     "paths": {
-      "*": ["src/*"],
       "@/contexts/*": ["contexts/*"],
       "@/pages/*": ["pages/*"],
       "@/data/*": ["data/*"],
@@ -44,8 +43,13 @@
       "node",
       "@types/testing-library__jest-dom",
       "@testing-library/jest-dom"
+    ],
+    "plugins": [
+      {
+        "name": "next"
+      }
     ]
   },
-  "include": ["next-env.d.ts", "src/**/*"],
+  "include": ["next-env.d.ts", "src/**/*", ".next/types/**/*.ts"],
   "exclude": ["node_modules", "cypress"]
 }
